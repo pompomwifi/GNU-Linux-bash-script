@@ -1,6 +1,8 @@
 #!/bin/bash
- 
+
 # add.repositories for apps and themes below
+##############################
+
 printf "\n\ninstalling apt-fast repository\n"
 sudo add-apt-repository -y ppa:apt-fast/stable
 printf "\n\ninstalling ubuntu-tweak repository\n"
