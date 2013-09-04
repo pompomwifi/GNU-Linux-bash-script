@@ -73,7 +73,6 @@ sudo apt-fast install zukitwo-theme zukitwo zukiwi
 # applications
 ##############
 sudo apt-fast install chromium
-sudo apt-fast install terminator
 sudo apt-fast install darktable
 sudo apt-fast install ubuntu-tweak
 sudo apt-fast install gnome-tweak-tool
