@@ -36,10 +36,6 @@ sudo add-apt-repository -y ppa:linrunner/tlp
  
 printf "\n\nabout to update package list\n"
 sudo apt-get update
-
-printf "\n\ninstall lm-sensors, write --sensors-- to see the result from terminal window\n"
-sudo apt-get install lm-sensors
-sudo sensors-detect
  
 printf "\n\ninstall apt-fast\n"
 sudo apt-get install apt-fast
@@ -72,11 +68,11 @@ gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
  
 sudo apt-fast install faenza-icon-theme faience-* 
 sudo apt-fast install gnome-cupertino-gtk-theme
-sudo apt-fast install zukitwo-theme zukitwo zukiwi 
-sudo apt-fast install mediterraneannight-gtk-theme
+sudo apt-fast install zukitwo-theme zukitwo zukiwi
  
 # applications
 ##############
+sudo apt-fast install chromium
 sudo apt-fast install terminator
 sudo apt-fast install darktable
 sudo apt-fast install ubuntu-tweak
