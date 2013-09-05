@@ -13,8 +13,6 @@ printf "\n\ninstalling faenza-icon repository\n"
 sudo add-apt-repository -y ppa:tiheum/equinox
 printf "\n\ninstalling webupd8team repository\n"
 sudo add-apt-repository -y ppa:webupd8team/themes
-printf "\n\ninstalling noobslab repository\n"
-sudo add-apt-repository -y ppa:noobslab/themes
 printf "\n\ninstalling canonical partner repository\n"
 sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 printf "\n\ninstalling sublime text the 3rd repository\n"
@@ -40,9 +38,6 @@ sudo apt-get update
 printf "\n\ninstall apt-fast\n"
 sudo apt-get install apt-fast
  
-# gnome-desktop-item-edit utility
-sudo apt-fast install --no-install-recommends gnome-panel
- 
 # show all startup applications
 sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
 
@@ -51,9 +46,6 @@ sudo apt-fast install nautilus-open-terminal && nautilus -q
 
 # get minimize and maximize button back on the gnome-shell titlebar / no "sudo"
 gsettings set org.gnome.shell.overrides button-layout 'menu:minimize,maximize,close'
-
-# remove overlay scrollbars
-sudo apt-get --purge autoremove overlay-scrollbar*
 
 # Turn gedit into programming mode
 gsettings set org.gnome.gedit.preferences.editor auto-indent true
